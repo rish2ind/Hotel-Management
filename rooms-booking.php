@@ -60,9 +60,9 @@
                         <select name="room_type" id="" class="form-control" required="">
                             <optgroup lable="Select-a-room">
                             <option value="SUPIRIER ROOM">SUPIRIER ROOM</option>
-                            <option value="DELUX ROOM">DELUX ROOM</option>
+                            <option value="DELUX ROOM">DELUXE ROOM</option>
                             <option value="SINGLE ROOM">SINGLE ROOM</option>
-                            <option value="GUEST HOUSE">GUEST HOUSE</option>
+                            <option value="GUEST HOUSE">LUXURY HOUSE</option>
                             </optgroup>
                         </select>       
                    </div>
