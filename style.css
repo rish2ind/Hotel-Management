@@ -1,0 +1,116 @@
+body{
+    
+    background-color: #f1f1f1;
+}
+.navigation{
+    background-color: #27368a; 
+    padding: 24px;
+}
+.navigation .lists li a{
+    color: goldenrod;
+    font-size: 18px;
+}
+.navigation .lists li a:hover{
+    color: white;
+}
+.logo
+{
+    background-color: #27368a; 
+}
+.jumbo{
+    background-color: #f5c214;
+    padding: 25px;
+    text-align: center;
+    
+}
+.jumbo a{
+    font-size: 25px;
+    letter-spacing: 15px;
+    color: black;
+}
+.jumbo a:hover{
+    text-decoration: none;
+    color:  red;
+}
+.container h1{
+    font-family: 'Arial';
+    text-align: center;
+}
+.container p{
+    text-align: center;
+}
+.services{
+/*    background-color: black;    */
+    border-radius: 10px;
+    height: 300px;
+    padding: 15px;
+    font-family: 'Times New Roman';
+    border-right: 1px solid gold;
+}
+.services .icons{
+    font-size: 30px;
+    margin-left: 45%;
+    color: gold;
+}
+.services h4{
+    color: white;
+    text-align: center;
+}
+.services .service-details{
+    color: white;
+}
+@media screen and (max-width:992px){
+    .services{
+        border-bottom: 1px solid gold;
+    }
+    .images{
+        margin-top: 18px;
+        box-shadow: 1px 0px 7px 4px;
+        margin-left: 20%;
+    }
+    .zoom{
+        overflow: hidden;
+        margin-left: 20%;
+    }
+    .zoom img{
+        margin-top: 10px;
+    }
+   }
+
+
+.block{
+    background-color: white;
+    padding: 15px;
+    font-family: 'Arial';
+    box-shadow: 2px 3px 15px 2px;
+    opacity: .9;
+}
+.block input{
+    padding: 15px;
+    font-size: 18px;
+}
+.contact{
+    background-color: black;
+    opacity: .9;
+    padding: 35px;
+    height: 600px;
+}
+.contact-form input{
+    opacity: .9;
+    color: black;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Arial';
+}
+.contact-form input[type=submit]{
+    color: white;
+}
+
+/**********************      Room booking style                     ************************/
+
+
+.details{
+    border: 1px solid black;
+    background-color: white;
+}
