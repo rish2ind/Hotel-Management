@@ -84,6 +84,7 @@
                                 <li><a href="#" >Delete Services</a></li>
                             </ul>
                         </li>
+                        <li><h3><a href="find-customers.php" target="demo">Search Customers</a></h3></li>
                     </ul>                 
                 </div>
                 <div class="col-md-9">
