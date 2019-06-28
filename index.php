@@ -43,8 +43,8 @@
                             <!--------------------------------  About Section    --------------------------->
                             
         <div class="container" >
-            <h1><a name="About"></a>About Our Hotel</h1>
-            <p>Beautiful Restaurant and Hotel design websites selection, the best gallery of Restaurant Websites design and Hotel Website Design examples.</p>
+            <h1 style="font-size: 60px;"><a name="About"></a>About Our Hotel</h1>
+            <p style="font-size: 18px; margin-bottom: 15px;">Beautiful Restaurant and Hotel design websites selection, the best gallery of Restaurant Websites design and Hotel Website Design examples.</p>
             <div class="row">
             <div class="col-md-4"><div class="about"><img src="Images/Oberoi%20(1).jpg" alt="" class="img-responsive images"></div></div>
                 <div class="col-md-4"><div class="about"><img src="Images/bar1.jpg" alt="" class="img-responsive images"></div></div>
@@ -54,7 +54,7 @@
         
                                     <!---------------------   Services   ----------------------->
                                     
-        <div class="container-fluid" style="background-image: url(Images/supriya-s-447048-unsplash.jpg);">
+        <div class="container-fluid" style="background-image: url(Images/services.jpeg); background-size: cover;">
             <a name="Services"></a><h1 style="text-align: center; font-family: 'Arial'; color: gold;">Our Services</h1>
             <div class="row">
       <?php while($data = mysqli_fetch_array($run)) {
@@ -79,10 +79,10 @@
             <h1 style="text-align: center; font-family: 'Arial';">Gallery</h1>
             <div class="row">
         <?php 
-                $sqlgallery = "select * from gallery";
+                $sqlgallery = "select * from gallery limit 4";
             $rungallery = mysqli_query($conn, $sqlgallery);
                 while($datagallery = mysqli_fetch_array($rungallery)) { ?>
-                <div class="col-md-3">
+                <div class="col-md-3" id="col">
                    <div class="zoom">
                     <img src="Admin_Block/Gallery/<?php echo $datagallery['pic'];  ?>" id="img" alt="">
                      <div class="box">
@@ -136,10 +136,8 @@
                         var positionTop = $(document).scrollTop();
                         console.log(positionTop);
                         if((positionTop > 1803) && (positionTop < 2439)){
-                            $('#img').addClass('animated bounceInLeft', 2000);
-                            $('#img1').addClass('animated bounceInLeft', 2000);
-                            $('#img2').addClass('animated bounceInRight', 2000);
-                            $('#img3').addClass('animated bounceInRight', 2000);
+                            $('#col').addClass('animated bounceInLeft', 2000);
+                          
                         }
                     });
                 });
