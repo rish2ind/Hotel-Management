@@ -59,7 +59,7 @@
                        <lable><B>Types of Rooms</B> <sup style="color: red;">*</sup></lable>
                         <select name="room_type" id="" class="form-control" required="">
                             <optgroup lable="Select-a-room">
-                            <option value="SUPIRIER ROOM">SUPIRIER ROOM</option>
+                            <option value="SUPIRIER ROOM">STANDARD ROOM</option>
                             <option value="DELUX ROOM">DELUXE ROOM</option>
                             <option value="SINGLE ROOM">SINGLE ROOM</option>
                             <option value="GUEST HOUSE">LUXURY HOUSE</option>
