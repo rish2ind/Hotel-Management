@@ -28,9 +28,11 @@
        </div>
        <?php include('connect.php');
             if(isset($_POST['upload'])){
+                
                 $pic = $_FILES['images']['name'];
                 $path = 'Gallery/';
-                $sql = "insert into gallery (pic) values ('$pic')";
+                $hover = $_REQUEST['hover'];
+                $sql = "insert into gallery (pic, hover) values ('$pic', '$hover')";
                 $run = mysqli_query($conn, $sql);
                 if($run >= 1){
                     move_uploaded_file($_FILES['images']['tmp_name'], $path.$pic);
@@ -45,6 +47,10 @@
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <input type="file" class="form-control" name="images">
+                </div>
+                 <div class="form-group">
+                   <lable><b>Enter hover description of Image : </b></lable>
+                    <input type="text" class="form-control" name="hover">
                 </div>
                 <div class="form-group">
                     <input type="submit" name="upload" value="Upload" class="btn btn-success">

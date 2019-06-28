@@ -33,7 +33,7 @@
                     {
     
                     ?>
-                    <tr><td><img src="Gallery/<?php echo $data['pic']; ?>" class="img-responsive" alt=""></td>
+                    <tr><td><img src="Gallery/<?php echo $data['pic']; ?>" style="height: 100px; width: 100px;" class="img-responsive" alt=""></td>
                     <td><?php echo $data['hover']; ?></td>
                     <td><a href="edit-gallery.php?id=<?php echo $data['id']; ?>">Edit</a></td>
                     <td><a href="delete-gallery.php?id=<?php echo $data['id']; ?>">Delete</a></td></tr>

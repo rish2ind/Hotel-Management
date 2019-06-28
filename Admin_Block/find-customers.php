@@ -72,11 +72,11 @@
                         <th>Id</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Mobile</th>
-                        <th>Check In</th>
-                        <th>Check Out</th>
+                        <th>Mobile</th>                                                
                         <th>Room Type</th>
                         <th>Room No.</th>
+                        <th>Check In</th>
+                        <th>Check Out</th>
                     </tr>
                     <?php  include('connect.php');
             if(isset($_POST['search'])){
