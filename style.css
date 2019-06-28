@@ -94,6 +94,9 @@ body{
     opacity: .9;
     padding: 35px;
     height: 600px;
+    position: relative;
+    left: 10px;
+    
 }
 .contact-form input{
     opacity: .9;
