@@ -99,7 +99,7 @@
 }
 else {
     echo "<script> alert ('Please first signin to your account');
-            window.location.href = 'user-login.php';
+            window.location.href = 'signup.php';
     </script>";
 }
 ?>
