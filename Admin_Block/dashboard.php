@@ -58,7 +58,7 @@
                                     $res = mysqli_query($conn, $sql);
                                     $data = mysqli_fetch_array($res);
                                     ?>
-                                    <a href="update-admin.php?id=<?php echo $data['username']; ?>"><h1 style="float: left; height: 39px; color: gold">Welcome : <span style="color: white; font-size: 25px;"><?php echo $data['Name']; ?></span></h1></a>
+                                    <a href="update-admin.php?id=<?php echo $data['id']; ?>"><h1 style="float: left; height: 39px; color: gold">Welcome : <span style="color: white; font-size: 25px;"><?php echo $data['Name']; ?></span></h1></a>
                                    
                 </div>
                 <div class="col-md-6 head">
