@@ -1,6 +1,7 @@
 <?php
     session_start();
 include('connect.php');
+   
     $fetch = "select * from admin";
     $runadmin = mysqli_query($conn, $fetch);
     $check = mysqli_fetch_array($runadmin);
@@ -72,6 +73,22 @@ include('connect.php');
         
        <div class="container-fluid">
            <div class="row">
+              <?php if(isset($_POST['update'])){
+                                         $id = $_REQUEST['id'];
+                                        $name = $_REQUEST['Name'];
+                                        $username = $_REQUEST['username'];
+                                        $pass = $_REQUEST['password'];
+                                        $update = "update admin set Name = '$name', username = '$username', password = '$pass' where username = '".$_SESSION['Aname']."'";
+                                        $runadmin = mysqli_query($conn, $update);
+                                        if($runadmin){
+                                            echo "<script>alert ('Profile updated successfully');
+                                window.location.href = 'update-admin.php';</script>";
+                                        }
+                                        else{
+                                            echo "<script>alert ('Profile updation failed');
+                                window.location.href = 'update-admin.php';</script>";
+                                        }
+                                    } ?>
                <div class="col-md-4"></div>
                <div class="col-md-4">
                    <form action="" method="post">
