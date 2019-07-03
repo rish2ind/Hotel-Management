@@ -79,11 +79,11 @@
                    </div> 
                   <div class="form-group">
                        <lable><b>Check-in</b></lable>
-                       <input type="date" class="form-control" name="cin">
+                       <input type="date" class="form-control" name="cin" required="">
                    </div>
                    <div class="form-group">
                        <lable><b>Check-out</b></lable>
-                       <input type="date" class="form-control" name="cout">
+                       <input type="date" class="form-control" name="cout" required="">
                    </div>
            <input type="submit" name="submit" class="btn btn-info">
            
