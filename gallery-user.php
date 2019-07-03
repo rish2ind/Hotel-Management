@@ -32,7 +32,7 @@
           $rungallery = mysqli_query($conn, $sqlgallery);
           while ($datagallery = mysqli_fetch_array($rungallery)) {
           ?>
-          <div class="col-md-3" style="margin-top: 10px;">
+          <div class="col-md-3" id="image" style="margin-top: 10px;">
               <div id="hover">
                   <img src="Admin_Block/Gallery/<?php echo $datagallery['pic']; ?>" alt="" class="img-responsive">
               </div>
@@ -45,15 +45,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
   <script src="Personal-Validation.js"></script>
    
-   <!--<script>
-        $(function(){
-            $("img").mouseenter(function(){
-                $(".slideup").slideDown();
-            });
-            $("img").mouseleave(function(){
-                $(".slideup").hide();
-            });
+   <script>
+        $(document).ready(function(){
+            $('#image').fadeIn();
         });
-        </script>-->
-    </body>
-</html>
+        </script>
+        <br>
+    <?php
+    include('footer.php');
+?>
