@@ -6,11 +6,7 @@
                 background-color: black;
                
             }
-            .register{
-                padding: 25px;
-               
-                opacity: .9;
-            }
+           
         </style>
     
     
