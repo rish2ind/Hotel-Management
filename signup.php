@@ -2,17 +2,11 @@
 
  <style type="text/css">
             body{
-                background-color: #ffeded;
-            }
-            .register{
-                padding: 25px;
                 background-color: black;
-                opacity: .9;
-                position: relative;
-                left: 7px;
             }
+            
         </style>
-<div class="container-fluid" style="background-image: url('Images/jaiselmer1.jpg'); background-size: cover;">
+<div class="container-fluid">
     <div class="row register">
         <div class="col-md-4"></div>
         <div class="col-md-4"><h2 style="color: white; text-align: center;">Sign Up</h2>
@@ -79,12 +73,73 @@
                             }
                         }
                         
-                  ?><center> <a href="user-login.php">Already a member ? </a></center></div>
+                  ?>
+                  </div>
         <div class="col-md-4"></div>
     </div>
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-    </div>
+        <div class="row" style="background-color: black;">
+                     
+                        <?php
+                            include('user-connect.php');
+        
+                        if(isset($_POST['signin'])){
+                            $email = $_REQUEST['email'];
+                            $password = $_REQUEST['password'];
+                            
+                            $log = "select * from user_signup where email = '$email' and password = '$password'";
+                        
+                            $run = mysqli_query($conn, $log);
+                            $data=mysqli_fetch_array($run);
+                            if($data)
+                            {                                
+                                $_SESSION['user'] = $data['email'];
+                            
+                                echo "<script>
+                                    alert ('Login Successfull');
+                                    window.location.href= 'index.php';
+                                </script>";
+                            }
+                            else{
+                                echo "<script>
+                                    alert ('login failed');
+                                </script>";
+                            }
+                        }
+                
+        ?>
+                <center> <span style="color: gold; font-size: 18px;">Already a member ?</span> &nbsp;<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign In</button></center>
+                 <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                           <button class="close" type="button" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">Sign In</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="contact-form" method="post">
+                    
+                    <div class="form-group">
+                        <lable style="color: gold;">Email : </lable>
+                        <input type="email" class="form-control" required="" name="email">
+                    </div>
+                    <div class="form-group">
+                        <lable style="color: gold;">Password : </lable>
+                        <input type="password" class="form-control" required="" name="password">
+                    </div>
+                    
+                    <div class="form-group">
+                    
+                        <input type="submit" class="btn btn-info" value="Sign In" name="signin" style="opacity: 1; margin-left: 40%;">
+                    </div>
+                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 </div>
+<br>
+
+<?php
+    include('footer.php');
+?>
