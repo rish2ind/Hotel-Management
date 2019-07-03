@@ -161,7 +161,7 @@ session_start();
             }
         </style>
     </head>
-    <body>
+    <body style="scroll-behaviour: smooth;">
                         <!------------------------------------   Header Section   ------------------------->
                         
         <div class="container-fluid" style="padding: 0px; padding-bottom: 0px;">
@@ -203,7 +203,7 @@ session_start();
                                 else
                                 {
                                     ?>
-                                    <li><a href="user-login.php">Signup/login</a></li>
+                                    <li><a href="signup.php">Signup/login</a></li>
                                     <?php
                                     
                                 }
