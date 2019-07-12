@@ -70,7 +70,7 @@
                                   // document.getElementById("errorpass").innerHTML = 'Password should be more than 6 digit long';
                                   return false;
                               }
-                              else if(uname){
+                              else if(isNaN(uname)){
                                   return true;
                               }
                               
