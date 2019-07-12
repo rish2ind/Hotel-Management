@@ -88,7 +88,7 @@
                     </ul>                 
                 </div>
                 <div class="col-md-9">
-                    <iframe src="iframe-default.php" name="demo" width="100%" height="800" frameborder="no"></iframe>
+                    <iframe src="iframe-default.php" name="demo" width="100%" height="800" fra frameborder="no"></iframe>
                 </div>
             </div>
         </div>
