@@ -135,7 +135,7 @@
                     $(window).scroll(function(){
                         var positionTop = $(document).scrollTop();
                         console.log(positionTop);
-                        if((positionTop > 1803) && (positionTop < 2439)){
+                        if((positionTop > 1620) && (positionTop < 1929)){
                             $('#col').addClass('animated bounceInLeft', 2000);
                           
                         }
