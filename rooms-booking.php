@@ -24,8 +24,11 @@
 ?>
           <?php   if(isset($_SESSION['user'])) {       ?>
                 <!---------------------------------------------        Personal Details   --------------------------------->
-                
-       <body style="background-image: url('Images/jaisel.jpg');" onload="document.registration.room_type.focus()">          
+           <style>
+                background-image: url('Images/jaisel.jpg');
+    
+            </style>     
+       <body onload="document.registration.room_type.focus()">          
    <div class="container">
        <div class="row block" >
           <?php
