@@ -161,7 +161,7 @@ session_start();
             }
         </style>
     </head>
-    <body style="scroll-behaviour: smooth;">
+    <body>
                         <!------------------------------------   Header Section   ------------------------->
                         
         <div class="container-fluid" style="padding: 0px; padding-bottom: 0px;">
