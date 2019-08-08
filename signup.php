@@ -166,15 +166,15 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                           <button class="close" type="button" data-dismiss="modal">&times;</button>
+                           <button class="close" type="button" data-dismiss="modal" style="border-radius: 100%; background-color: black; color: white; font-size: 17px; opacity: 1; height: 31px; text-align: center; text-shadow: none; width: 31px; margin-top: 5px;"><span>x</span></button>
                             <h2 class="modal-title">Sign In</h2>
                         </div>
                         <div class="modal-body">
                             <form action="" class="contact-form" method="post">
                     
                     <div class="form-group">
-                        <lable>Email : </lable>
-                        <input type="email" class="form-control" required="" name="email">
+                        
+                        <input type="email" class="form-control" required="" name="email" placeholder="Email address" style="background-color: #f1f1f1; padding: 10px; border: none;">
                     </div>
                     <div class="form-group">
                         <lable>Password : </lable>
