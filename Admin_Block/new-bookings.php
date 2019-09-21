@@ -1,6 +1,6 @@
 <?php
     include('connect.php');
-    $sql = "select * from user_booking";
+     $sql = "select * from user_booking";
     $run = mysqli_query($conn, $sql);
    
 ?>
